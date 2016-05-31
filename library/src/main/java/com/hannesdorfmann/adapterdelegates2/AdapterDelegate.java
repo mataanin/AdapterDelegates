@@ -46,9 +46,10 @@ public interface AdapterDelegate<T> {
    * Creates the  {@link RecyclerView.ViewHolder} for the given data source item
    *
    * @param parent The ViewGroup parent of the given datasource
+   * @param viewType View type
    * @return The new instantiated {@link RecyclerView.ViewHolder}
    */
-  @NonNull public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent);
+  @NonNull public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType);
 
   /**
    * Called to bind the {@link RecyclerView.ViewHolder} to the item of the datas source set

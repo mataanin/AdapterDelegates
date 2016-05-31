@@ -20,7 +20,7 @@ public class ReptilesFallbackDelegate extends AbsFallbackAdapterDelegate {
     inflater = activity.getLayoutInflater();
   }
 
-  @NonNull @Override public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent) {
+  @NonNull @Override public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
     View view = inflater.inflate(R.layout.item_unknown_reptile, parent, false);
     return new ReptileFallbackViewHolder(view);
   }

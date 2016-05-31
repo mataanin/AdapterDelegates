@@ -68,9 +68,10 @@ public abstract class AbsListItemAdapterDelegate<I extends T, T, VH extends Recy
   /**
    * Creates the  {@link RecyclerView.ViewHolder} for the given data source item
    * @param parent The ViewGroup parent of the given datasource
+   * @param viewType View type
    * @return ViewHolder
    */
-  @NonNull @Override public abstract VH onCreateViewHolder(@NonNull ViewGroup parent);
+  @NonNull @Override public abstract VH onCreateViewHolder(@NonNull ViewGroup parent, int viewType);
 
   /**
    * Called to bind the {@link RecyclerView.ViewHolder} to the item of the dataset

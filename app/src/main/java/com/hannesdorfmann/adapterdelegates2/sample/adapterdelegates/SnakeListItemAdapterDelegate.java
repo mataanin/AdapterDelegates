@@ -32,7 +32,7 @@ public class SnakeListItemAdapterDelegate extends
   }
 
   @NonNull @Override
-  public SnakeListItemAdapterDelegate.SnakeViewHolder onCreateViewHolder(@NonNull ViewGroup parent) {
+  public SnakeListItemAdapterDelegate.SnakeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
     return new SnakeListItemAdapterDelegate.SnakeViewHolder(
         inflater.inflate(R.layout.item_snake, parent, false));
   }
